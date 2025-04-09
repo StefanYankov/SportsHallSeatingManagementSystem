@@ -16,7 +16,7 @@ public class Main {
 
         // Create a fixed thread pool with 4 threads (one per entrance)
         ExecutorService executor = Executors.newFixedThreadPool(4);
-
+        
         // Create an array to hold CompletableFuture objects for 10 groups
         CompletableFuture<Void>[] futures = new CompletableFuture[10];
 

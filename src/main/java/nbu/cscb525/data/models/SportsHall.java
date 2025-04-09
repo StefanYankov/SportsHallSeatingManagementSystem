@@ -18,7 +18,6 @@ public class SportsHall {
         this.seatCategories.put(SeatCategory.PREMIUM, 25);
         this.seatCategories.put(SeatCategory.ECONOMY, 50);
     }
-
     public SportsHall(Map<SeatCategory, Integer> capacity) {
         if (capacity == null || capacity.isEmpty()) {
             throw new IllegalArgumentException(ExceptionMessages.CAPACITIES_CANNOT_BE_NULL_OR_EMPTY);
