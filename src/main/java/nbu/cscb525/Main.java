@@ -38,7 +38,7 @@ public class Main {
                     System.out.println(MessageFormat.format("Entrance {0}: Failed to seat group of {1} in {2} - {3}",entranceNumber, groupSize, seatCategory.name(), e.getMessage()));
                 }
 
- //                 // to simulate concurency
+ //                 // uncomment to "slow down" the concurrent execution
 //                try {
 //                    // for demonstration purpose
 //                    Thread.sleep(2000);
@@ -46,7 +46,6 @@ public class Main {
 //                    throw new RuntimeException(e);
 //                }
             }, executor);
-
         }
 
         // Wait for all CompletableFuture tasks to complete
