@@ -89,4 +89,4 @@ As this is a university course project, contributions are not expected.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE]() file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/StefanYankov/SportsHallSeatingManagementSystem/blob/main/LICENSE) file for details.

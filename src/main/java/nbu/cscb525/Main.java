@@ -27,6 +27,7 @@ public class Main {
 
             futures[i] = CompletableFuture.runAsync(() -> {
 
+                // from the thread name get the id (getId depricated in this java version) to simulate entrance based on the thread pool
                 String entranceNumber = Thread.currentThread().getName().split("-")[3];
 
                 try {
@@ -37,6 +38,7 @@ public class Main {
                     System.out.println(MessageFormat.format("Entrance {0}: Failed to seat group of {1} in {2} - {3}",entranceNumber, groupSize, seatCategory.name(), e.getMessage()));
                 }
 
+ //                 // to simulate concurency
 //                try {
 //                    // for demonstration purpose
 //                    Thread.sleep(2000);
